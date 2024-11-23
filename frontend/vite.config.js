@@ -5,9 +5,11 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
 	plugins: [react()],
 	build: {
+		outDir: 'dist',
 		rollupOptions: {
 			input: '/src/index.html', // Vite looks for index.html as the entry
-		}
+		},
+
 	},
 	server: {
 		port: 3000,
