@@ -6,7 +6,7 @@ export default defineConfig({
 	plugins: [react()],
 	build: {
 		rollupOptions: {
-			input: 'index.html', // Vite looks for index.html as the entry
+			input: '/src/index.html', // Vite looks for index.html as the entry
 		}
 	},
 	server: {
